@@ -7,6 +7,8 @@ const resultElement = document.querySelector('.result');
 var resultCount=0;
 resultCount=items.length;
 resultElement.textContent=resultCount.toString();
+
+
 // Gắn sự kiện click cho button tìm kiếm
 searchButton.addEventListener('click', function() {
   const fromDate = new Date(fromDateInput.value);
@@ -29,13 +31,23 @@ searchButton.addEventListener('click', function() {
   resultElement.textContent = resultCount.toString();
 });
 
+
+
 // Lấy các phần tử cần sử dụng
 const bookButtons = document.querySelectorAll('.btn-datlich');
 
 // Gắn sự kiện click cho tất cả các nút "Đặt lịch"
+
 bookButtons.forEach(function(button) {
   button.addEventListener('click', function() {
-    const item = this.closest('.item'); // Lấy phần tử .item gần nhất
+
+    const username = localStorage.getItem('username');
+    const password = localStorage.getItem('password');
+    
+    if(username!=='trieu' || password!=='123'){
+      window.location.href = 'login/login_user.html';
+    }else{
+      const item = this.closest('.item'); // Lấy phần tử .item gần nhất
     const peoElement = item.querySelector('.peo'); // Lấy phần tử .peo
     const currentValue = parseInt(peoElement.textContent); // Lấy giá trị hiện tại của .peo
     const newValue = currentValue + 1; // Tăng giá trị lên 1
@@ -44,8 +56,15 @@ bookButtons.forEach(function(button) {
     // Lưu nội dung của item vào localStorage với key "bookedItem"
     localStorage.setItem('bookedItem', itemContent);
     //  window.location.href = 'dangdangky.html';
+    }
   });
 });
+
+const logout = document.querySelector('.logout');
+logout.addEventListener('click',function(){
+  localStorage.removeItem('username');
+  localStorage.removeItem('password');
+})
 
 document.addEventListener('DOMContentLoaded', function() {
   const sendButton = document.getElementById('sendButton');
