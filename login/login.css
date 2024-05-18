@@ -1,0 +1,49 @@
+.login{
+    width: 500px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+.register{
+    width: 500px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.login_form{
+    display: flex;
+    align-items: center;
+    height: 55px;
+    font-weight: bold;
+}
+label{
+    min-width: 120px;
+}
+input{
+   flex: 1;
+   padding-left: 10px;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-dangnhap,.btn-trove{
+    background-color: rgb(9, 9, 255);
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.btn-dangky{
+    background-color: rgb(58, 226, 83);
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+}

@@ -1,0 +1,348 @@
+h1{
+    margin-left: 250px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.fDonor{
+    border: solid;
+    width: 600px;
+    margin-left: 280px;
+    font-weight: bold;
+    border-radius: 8px;
+    
+}
+.lDonor{
+    font-size: 20px;
+    
+    margin: 20px;
+}
+.form-row{
+    display: flex;
+    align-items: center;
+    height: 55px;
+    font-weight: bold;
+    
+    
+}
+input{
+    
+    margin-right: 50px;
+}
+select{
+
+    height:30px;
+    margin-left: 10px;
+}
+label{
+    min-width: 200px;
+}
+.btn-donor{
+    display: flex;
+    justify-content: space-between;
+
+}
+.btn-cancel{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: red;
+    font-weight: bold;
+    margin-left: 15px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.btn-register{
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 20px;
+    background-color: red;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.hDonor{
+  background-color: blue;
+  padding: 5px;
+  width: 60px;
+  margin: auto;
+  border-radius: 4px;
+}
+.search-donor{
+    margin-left: 20px;
+}
+table{
+    margin-left: 200px;
+    min-width: 800px;
+}
+.btn-request{
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 20px;
+    background-color: red;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.note{
+    margin: 20px;
+    border: solid;
+    padding: 30px;
+    border-radius: 6px;
+}
+.note span{
+    color: red;
+    font-weight: bold;
+}
+
+h3{
+    margin-top: 50px;
+    margin-left: 150px;
+}
+h2{
+    color: rgb(54, 54, 214);
+}
+.date{
+    margin-left: 150px;
+}
+.action{
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.item{
+    margin: 0 30px 30px 0;
+    display: flex ;
+    background-color:  rgb(231, 239, 244);
+    border-radius: 8px;
+    align-items: center;
+    
+}
+.item-img{
+    background-color:rgb(151, 203, 235);
+   padding: 20px;
+   text-align: center;
+}
+.item-img img{
+    width: 90px;
+}
+.item-contex{
+    width:800px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+.select{
+    margin-left: 150px;
+    margin-top: 25px;
+}
+.vio{
+    color: rgb(54, 54, 214);
+    font-weight: bold;
+    font-size: 16px;
+}
+.peo{
+    font-size: 25px;
+}
+.btn-search{
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(54, 54, 214);
+    color: #fff;
+    cursor: pointer;
+}
+.btn-datlich,.btn-xoaDK{
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(54, 54, 214);
+    color: #fff;
+    cursor: pointer;
+}
+.btn-xemDS{
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(54, 54, 214);
+    color: #fff;
+    cursor: pointer;
+}
+/* hospital */
+.action-hospital{
+    font-size: 50px;
+    margin-left: 300px;
+    margin-top: 50px;
+    font-weight: bold;
+    color:rgb(54, 54, 214);
+}
+.btn-hdhienmau{
+    padding: 8px 80px;
+    border-radius: 20px;
+    margin-left: 340px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background-color: rgb(54, 54, 214);
+    color: #fff;
+    font-weight: bold;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes growth{
+    from{
+        transform: scale(0,7);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn linear 0.1s;
+    display: none;
+  }
+
+  .modal__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal__body {
+    /* padding: 20px 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 220px 300px ;
+    position: relative;
+    border-radius: 5px;
+    animation: growth linear 0.1s;
+  }
+  
+.auth-form{
+    margin: 30px;
+}
+.input-modal{
+    width: 500px;
+    margin-right: 50px;
+}
+.auth-form_btn{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-them,.btn-huy,.btn-send{
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+.btn-them,.btn-send{
+    background-color:  rgb(54, 54, 214);
+}
+.btn-huy{
+    background-color:  rgb(242, 18, 55);
+}
+
+
+.sudal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn linear 0.1s;
+    display: none;
+  }
+
+  .sudal__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .sudal__body {
+    /* padding: 20px 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 220px 300px ;
+    position: relative;
+    border-radius: 5px;
+    animation: growth linear 0.1s;
+  }
+.suth-form{
+    margin: 20px;
+}
+#donorTable{
+    margin: auto;
+}
+.btn-cn,.btn-tc{
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+}
+.btn-cn{
+    background-color:rgb(54, 54, 214);
+}
+.btn-tc{
+    background-color:  rgb(242, 18, 55);
+}
+.vadal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn linear 0.1s;
+    display: none;
+  }
+
+  .vadal__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .vadal__body {
+    /* padding: 20px 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 220px 300px ;
+    position: relative;
+    border-radius: 5px;
+    animation: growth linear 0.1s;
+  }

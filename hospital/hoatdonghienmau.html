@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../admin/admin.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="stylesheet" href="../user/user.css">
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="header-link">
+            <i class="header-icon fa-solid fa-heart-pulse"></i>
+            <span>Online Blood Bank</span>
+        </a>
+        <a href="../index.html" class="header-link">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Logout</span>
+        </a>
+    </div>
+
+    <div class="all">
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="home_hospital.html" class="nav-link">
+                        <i class="header-icon fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="hoatdonghienmau.html" class="nav-link">
+                        <i class="header-icon fa-solid fa-user"></i>
+                            <span>Hoạt động hiến máu</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="hoatdongdangdienra.html" class="nav-link">
+                        <i class="header-icon fa-solid fa-user-injured"></i>
+                            <span>Hoạt động đang diễn ra</span> 
+                    </a>
+                </li>
+                <li>
+                    <a href="yeucaumau.html" class="nav-link">
+                        <i class="header-icon fa-solid fa-hand-holding-heart"></i>
+                            <span>Yêu cầu máu</span>
+                    </a>
+                </li>
+               
+            </ul>
+              
+        </div>
+        <div class="container">
+            <div class="action">
+                <button class="btn-hdhienmau" id="btn-hdhienmau">Thêm hoạt đông hiến máu</button>
+                <div class="item">
+                    <div class="item-img">
+                        <img width="50%" src="https://static.giotmauvang.org.vn/ihpstatic/LOGO/CTD.png" alt="CTD">
+                    </div>
+                    <div class="item-contex">
+                        <div class="item-contex1">
+                            <h2>Hiến máu - Trung tâm hiến máu nhân đạo tp.HCM </h2>
+                            <p>Địa chỉ : <span>106 thiên phước,phường 9,quận tân bình</span></p>
+                            <p>Thời gian hoạt động: <span><span class="dateAction">19/05/2024</span>- Từ 07:00 đến 11:30</span></p>
+                            <p>Thời than hiến máu: <span>07:00 - 11:00</span></p>
+                        </div>
+                        <div class="item-contex2">
+                            <p>Số lượng đăng ký</p>
+                            <p class="vio"><span class="peo">5</span>/ <span class="peo">200</span> Người</p>
+                            <button class="btn-xemDS">xem danh sách</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <img width="50%" src="https://static.giotmauvang.org.vn/ihpstatic/LOGO/CTD.png" alt="CTD">
+                    </div>
+                    <div class="item-contex">
+                        <div class="item-contex1">
+                            <h2>Hiến máu - Trung tâm hiến máu nhân đạo tp.HCM </h2>
+                            <p>Địa chỉ : <span>106 thiên phước,phường 9,quận tân bình</span></p>
+                            <p>Thời gian hoạt động: <span><span class="dateAction">19/05/2024</span>- Từ 07:00 đến 11:30</span></p>
+                            <p>Thời than hiến máu: <span>07:00 - 11:00</span></p>
+                        </div>
+                        <div class="item-contex2">
+                            <p>Số lượng đăng ký</p>
+                            <p class="vio"><span class="peo">5</span>/ <span class="peo">200</span> Người</p>
+                            <button class="btn-xemDS">xem danh sách</button>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>   
+        </div>
+    </div>    
+    
+    <div class="modal" >
+        <div class="modal__overlay"></div>
+
+        <div class="modal__body">
+            <div class="modal__inner">
+                <div class="auth-form">
+                    <div class="form-row">
+                        <label class="" for="nameHospital">Tên bệnh viện:</label>
+                        <input class="input-modal" type="text" id="nameHospital" name="nameHospital">
+                    </div>
+                    <div class="form-row">
+                        <label class="" for="address">Địa chỉ:</label>
+                        <input class="input-modal" type="text" id="address" name="address">
+                    </div>
+                    <div class="form-row">
+                        <label class="" for="timeAcction">Thời gian hoạt động:</label>
+                        <input class="input-modal" type="date" id="timeAcction" name="timeAcction">
+                    </div>
+                    <div class="form-row">
+                        <label class="" for="timeBlood">Thời gian hiến máu:</label>
+                        <input class="input-modal" type="text" id="timeBlood" name="timeBlood">
+                    </div>
+                    <div class="auth-form_btn">
+                        <button class="btn-them">Thêm</button>
+                        <button class="btn-huy">Hủy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sudal">
+        <div class="sudal__overlay"></div>
+        <div class="sudal__body">
+            <div class="sudal__inner">
+                <div class="suth-form">
+                    <table id="donorTable">
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Blood Group</th>
+                            <th>Mobile</th>
+                            <th>Address</th>
+                        </tr>
+                        <tr>
+                            <td>bin</td>
+                            <td>21</td>
+                            <td>A+</td>
+                            <td>0351231235</td>
+                            <td>ha noi</td>
+                        </tr>
+                        <tr>
+                            <td>bin</td>
+                            <td>21</td>
+                            <td>A-</td>
+                            <td>0351231235</td>
+                            <td>ha noi</td>
+                        </tr>
+                        <tr>
+                            <td>bin</td>
+                            <td>21</td>
+                            <td>O+</td>
+                            <td>0351231235</td>
+                            <td>ha noi</td>
+                        </tr>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="hospital.js"></script>
+</body>
+
+</html>

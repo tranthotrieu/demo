@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: rgb(225, 29, 91);
+}
+
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:var(--main-color);
+    height: 50px;
+    width: 100%;
+}
+.header-name {
+    margin: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-list {
+    display: flex;
+    list-style: none;
+    
+}
+
+.header-list li {
+    padding: 10px;
+}
+
+.header-link{
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+}
+.header-link span {
+    font-weight: bold;
+    
+}
+.nav{
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(143, 146, 148);
+}
+
+.nav-link{
+    
+    text-decoration: none;
+    color: aliceblue;
+
+}   
+
+.nav li{
+    margin-top: 30px;
+    margin-left: 10px;
+    list-style: none;
+}
+.all{
+    display: flex;
+}
+/* donorAmin */
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+table{
+    width: 80%;
+    margin:30px auto;
+}
+table,th,td{
+    border: solid;
+    text-align: center;
+}
+th{
+    height: 50px;
+    background-color: aqua;
+}
+td{
+    height: 50px;
+    background-color: beige;
+}
+
+.btn-donor{
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-edit{
+    background-color: blue;
+}
+.btn-delete{
+    background-color: red;
+}
+
+.update-blood{
+    text-align: center;
+    margin-top: 30px;
+}
+.update-blood select,input{
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 4px;
+}
+.update-blood button{
+    padding: 5px;
+    background-color: blue;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+.login{
+    width: 500px;
+   border-radius: 8px;
+   border: 2px solid;
+   margin: auto;
+   margin-top: 50px;
+   
+}
+h1{
+    margin-left: 10px;
+}
+form{
+    margin-left: 10px;
+}
+.form-row{
+    display: flex;
+    margin: 10px 0;
+}
+input{
+    flex: 1;
+    margin-right: 50px;
+}
+label{
+    min-width: 120px;
+}
+.btn{
+    justify-content: space-evenly;
+}
+
+
+.blood{
+    
+    display: flex;
+    
+}
+.blood-item{
+    border: solid;
+    position: relative;
+    width: 280px;
+    height: 130px;
+    border-radius: 20px;
+    margin: 30px 20px;
+    
+}
+.blood-item--style1{
+    position: absolute;
+    right:20px ;
+    top: 20px;
+    font-size: 30px;
+}
+.blood-item--style2{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+.blood-item--style1 i{
+    color: rgb(221, 22, 22);
+}
