@@ -60,11 +60,17 @@ bookButtons.forEach(function(button) {
   });
 });
 
-const logout = document.querySelector('.logout');
-logout.addEventListener('click',function(){
+// const logout = document.querySelector('.logout');
+// logout.addEventListener('click',function(){
+//   localStorage.removeItem('username');
+//   localStorage.removeItem('password');
+// })
+
+function logout() {
   localStorage.removeItem('username');
   localStorage.removeItem('password');
-})
+  window.location.href = "../index.html";
+}
 
 document.addEventListener('DOMContentLoaded', function() {
   const sendButton = document.getElementById('sendButton');
