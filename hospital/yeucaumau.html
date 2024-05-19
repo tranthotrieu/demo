@@ -1,99 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../admin/admin.css">
-    <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.css">
-    <link rel="stylesheet" href="../user/user.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../admin/admin.css" />
+    <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.css" />
+    <link rel="stylesheet" href="../user/user.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
     <div class="header">
-        <a href="#" class="header-link">
-            <i class="header-icon fa-solid fa-heart-pulse"></i>
-            <span>Online Blood Bank</span>
-        </a>
-        <a href="../index.html" class="header-link">
-            <i class="fa-solid fa-right-from-bracket"></i>
-            <span>Logout</span>
-        </a>
+      <a href="#" class="header-link">
+        <i class="header-icon fa-solid fa-heart-pulse"></i>
+        <span>Ngân hàng máu</span>
+      </a>
+      <a href="../index.html" class="header-link">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        <span>Đăng xuất</span>
+      </a>
     </div>
 
     <div class="all">
-        <div class="nav">
-            <ul>
-                <li>
-                    <a href="home_hospital.html" class="nav-link">
-                        <i class="header-icon fa-solid fa-house"></i>
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="hoatdonghienmau.html" class="nav-link">
-                        <i class="header-icon fa-solid fa-user"></i>
-                            <span>Hoạt động hiến máu</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="hoatdongdangdienra.html" class="nav-link">
-                        <i class="header-icon fa-solid fa-user-injured"></i>
-                            <span>Hoạt động đang diễn ra</span> 
-                    </a>
-                </li>
-                <li>
-                    <a href="yeucaumau.html" class="nav-link">
-                        <i class="header-icon fa-solid fa-hand-holding-heart"></i>
-                            <span>Yêu cầu máu</span>
-                    </a>
-                </li>
-               
-            </ul>
-              
-        </div>
-        <div class="container">
-            <h1>Yêu cầu máu</h1>
-            <form class="fDonor" id="requestForm" action="">
-                <div class="form-row">
-                    <label class="lDonor" for="dName">Tên</label>
-                    <input type="text" id="dName" name="dName">
-                </div>
-                <div class="form-row">
-                    <label class="lDonor" for="bloodGroup">Nhóm máu</label>
-                    <select id="bloodGroup" name="bloodGroup">
-                        <option value="">choose option</option>
-                        <option value="A+">A+</option>
-                        <option value="A-">A-</option>
-                        <option value="B+">B+</option>
-                        <option value="B-">B-</option>
-                        <option value="O+">O+</option>
-                        <option value="O-">O-</option>
-                        <option value="AB+">AB+</option>
-                        <option value="AB-">AB-</option>
-                    </select>
-                </div>
-                <div class="form-row">
-                    <label class="lDonor" for="ml">ml</label>
-                    <input type="text" id="ml" name="ml">
-                </div>
-                <div class="form-row">
-                    <label class="lDonor" for="address">Địa chỉ</label>
-                    <input type="text" id="address" name="address">
-                </div>
-                
-                <div class="btn-donor">
-                    <button class="btn-cancel">Cancel</button>
-                    <button class="btn-request" type="submit">Request</button>
-                </div>
-            </form>
-        </div>
-    </div>    
-    
-   
+      <div class="nav">
+        <ul>
+          <li>
+            <a href="home_hospital.html" class="nav-link">
+              <i class="header-icon fa-solid fa-house"></i>
+              <span>Trang chủ</span>
+            </a>
+          </li>
+          <li>
+            <a href="hoatdonghienmau.html" class="nav-link">
+              <i class="header-icon fa-solid fa-user"></i>
+              <span>Hoạt động hiến máu</span>
+            </a>
+          </li>
+          <li>
+            <a href="hoatdongdangdienra.html" class="nav-link">
+              <i class="header-icon fa-solid fa-user-injured"></i>
+              <span>Hoạt động đang diễn ra</span>
+            </a>
+          </li>
+          <li>
+            <a href="yeucaumau.html" class="nav-link">
+              <i class="header-icon fa-solid fa-hand-holding-heart"></i>
+              <span>Yêu cầu máu</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <h1 class="required-blood-title">Yêu cầu máu</h1>
+        <form class="fDonor" id="requestForm" action="">
+          <div class="form-row">
+            <label class="lDonor" for="dName">Tên</label>
+            <input type="text" id="dName" name="dName" />
+          </div>
+          <div class="form-row">
+            <label class="lDonor" for="bloodGroup">Nhóm máu</label>
+            <select id="bloodGroup" name="bloodGroup">
+              <option value="">Chọn nhóm máu</option>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label class="lDonor" for="ml">Đơn vị máu</label>
+            <input type="text" id="ml" name="ml" />
+          </div>
+          <div class="form-row">
+            <label class="lDonor" for="address">Địa chỉ</label>
+            <input type="text" id="address" name="address" />
+          </div>
 
-    
+          <div class="btn-donor">
+            <button class="btn-cancel">Cancel</button>
+            <button class="btn-request" type="submit">Request</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <script src="hospital.js"></script>
     <script src="../user/user.js"></script>
-</body>
-
+  </body>
 </html>

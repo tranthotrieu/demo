@@ -1,172 +1,229 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-:root{
-    --main-color: rgb(225, 29, 91);
-}
+@import url("../global.css");
 
-.header{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    background-color:var(--main-color);
-    height: 50px;
-    width: 100%;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--red-500);
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  font-size: 1.4rem;
+  padding: 0 2.4rem;
 }
 .header-name {
-    margin: 0 15px;
-    display: flex;
-    justify-content: space-between;
+  margin: 0 15px;
+  display: flex;
+  justify-content: space-between;
 }
 .header-list {
-    display: flex;
-    list-style: none;
-    
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
 }
 
-.header-list li {
-    padding: 10px;
-}
-
-.header-link{
-    text-decoration: none;
-    color: white;
-    margin: 15px;
+.header-link {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
 }
 .header-link span {
-    font-weight: bold;
-    
+  font-weight: bold;
+  position: relative;
 }
-.nav{
-    width: 200px;
-    height: 100vh;
-    background-color: rgb(143, 146, 148);
+.header-link span:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
 }
 
-.nav-link{
-    
-    text-decoration: none;
-    color: aliceblue;
-
-}   
-
-.nav li{
-    margin-top: 30px;
-    margin-left: 10px;
-    list-style: none;
+.header-link span:hover:after {
+  width: 100%;
+  left: 0;
 }
-.all{
-    display: flex;
+
+.nav {
+  flex: 30rem;
+  min-height: 100vh;
+
+  font-size: 1.6rem;
+  color: var(--red-500);
+  background-color: var(--red-50);
+  box-shadow: var(--shadow-2);
+}
+
+.nav-link {
+  display: flex;
+  gap: 0.8rem;
+
+  align-items: center;
+  text-decoration: none;
+  color: var(--red-500);
+}
+.nav-link span {
+  font-weight: bold;
+  position: relative;
+}
+.nav-link span:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--red-500);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-link span:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.nav li {
+  margin-top: 30px;
+  margin-left: 10px;
+  list-style: none;
+}
+.all {
+  padding-top: 5rem;
+  display: flex;
 }
 /* donorAmin */
-h1{
-    text-align: center;
-    margin-top: 100px;
+
+table,
+th,
+td {
+  font-size: 1.6rem;
+  text-align: center;
+}
+th {
+  height: 6rem;
+  color: var(--zinc-50);
+  background-color: var(--red-400);
+}
+td {
+  height: 6rem;
 }
 
-table{
-    width: 80%;
-    margin:30px auto;
-}
-table,th,td{
-    border: solid;
-    text-align: center;
-}
-th{
-    height: 50px;
-    background-color: aqua;
-}
-td{
-    height: 50px;
-    background-color: beige;
+tr:nth-of-type(odd) {
+  background-color: var(--red-100);
 }
 
-.btn-donor{
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
+.btn-donor {
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.btn-edit{
-    background-color: blue;
+.btn-edit {
+  background-color: blue;
 }
-.btn-delete{
-    background-color: red;
-}
-
-.update-blood{
-    text-align: center;
-    margin-top: 30px;
-}
-.update-blood select,input{
-    height: 30px;
-    width: 250px;
-    text-align: center;
-    margin: 10px;
-    border-radius: 4px;
-}
-.update-blood button{
-    padding: 5px;
-    background-color: blue;
-    margin-left: 10px;
-    border-radius: 4px;
-}
-.login{
-    width: 500px;
-   border-radius: 8px;
-   border: 2px solid;
-   margin: auto;
-   margin-top: 50px;
-   
-}
-h1{
-    margin-left: 10px;
-}
-form{
-    margin-left: 10px;
-}
-.form-row{
-    display: flex;
-    margin: 10px 0;
-}
-input{
-    flex: 1;
-    margin-right: 50px;
-}
-label{
-    min-width: 120px;
-}
-.btn{
-    justify-content: space-evenly;
+.btn-delete {
+  background-color: red;
 }
 
+.update-blood {
+  text-align: center;
+  margin-top: 30px;
+}
+.update-blood select {
+  height: 30px;
+  width: 250px;
+  text-align: center;
+  margin: 10px;
+  border-radius: 4px;
+}
+.update-blood button {
+  padding: 5px;
+  background-color: blue;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+.login {
+  width: 500px;
+  border-radius: 8px;
+  border: 2px solid;
+  margin: auto;
+  margin-top: 50px;
+}
 
-.blood{
-    
-    display: flex;
-    
+form {
+  margin-left: 10px;
 }
-.blood-item{
-    border: solid;
-    position: relative;
-    width: 280px;
-    height: 130px;
-    border-radius: 20px;
-    margin: 30px 20px;
-    
+.form-row {
+  display: flex;
+  margin: 10px 0;
 }
-.blood-item--style1{
-    position: absolute;
-    right:20px ;
-    top: 20px;
-    font-size: 30px;
+
+.btn {
+  justify-content: space-evenly;
 }
-.blood-item--style2{
-    position: absolute;
-    bottom: 30px;
-    left: 20px;
+
+.blood {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem 1.2rem;
+  justify-content: center;
 }
-.blood-item--style1 i{
-    color: rgb(221, 22, 22);
+.blood-item {
+  position: relative;
+  width: 24rem;
+  height: 12rem;
+  padding: 0 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--red-400);
+  gap: 1.2rem;
+}
+.blood-item--style1 {
+  font-size: 2.4rem;
+  display: flex;
+  color: var(--zinc-600);
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.blood-item--style2 {
+  font-size: 1.8rem;
+  color: var(--zinc-600);
+  font-weight: 600;
+}
+.blood-item--style1 i {
+  font-size: 2.4rem;
+  color: var(--red-500);
+}
+
+.container {
+  padding: 0 6.4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3.2rem;
+}
+
+.action {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  font-size: 1.4rem;
 }

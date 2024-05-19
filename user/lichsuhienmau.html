@@ -1,107 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/admin/admin.css">
-    <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.css">
-    <link rel="stylesheet" href="user.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/admin/admin.css" />
+    <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.css" />
+    <link rel="stylesheet" href="user.css" />
+  </head>
+  <body>
     <div class="header">
-        <a href="#" class="header-link">
-            <i class="header-icon fa-solid fa-heart-pulse"></i>
-            <span>Online Blood Bank</span>
-        </a>
-        <a onclick="logout()" href="#" class="header-link logout">
-            <i class="fa-solid fa-right-from-bracket"></i>
-            <span>Logout</span>
-          </a>
+      <a href="#" class="header-link">
+        <i class="header-icon fa-solid fa-heart-pulse"></i>
+        <span>Ngân hàng máu</span>
+      </a>
+      <a onclick="logout()" href="#" class="header-link logout">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        <span>Đăng xuất</span>
+      </a>
     </div>
 
     <div class="all">
-        <div class="nav">
-            <ul>
-                <li>
-                    <a href="home_user.html" class="nav-link">
-                        <i class="header-icon fa-solid fa-house"></i>
-                        <span>Trang chủ</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="dangdangky.html" class="nav-link">
-                        <i class="header-icon fa-solid fa-user"></i>
-                            <span>Hoạt động đang đăng ký</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="lichsuhienmau.html" class="nav-link">
-                        <i class="header-icon fa-solid fa-user-injured"></i>
-                            <span>Lịch sử hiến máu</span> 
-                    </a>
-                </li>
-                
-               
-            </ul>
-              
-        </div>
-        <div class="container">
-            <table id="historyTable" >
-                <tr>
-                    <th>Tên bệnh viện</th>
-                    <th>Nhóm máu</th>
-                    <th>Ngày hiến máu</th>
-                    <th>hiến (ml)</th>
-                </tr>
-                <tr>
-                    <td>bệnh viện huyết học</td>
-                    <td>A+</td>
-                    <td>21/5/2023</td>
-                    <td>21</td>
-                </tr>
-                <tr>
-                    <td>bệnh viện huyết học</td>
-                    <td>A+</td>
-                    <td>21/5/2023</td>
-                    <td>21</td>
-                </tr>
-                <tr>
-                    <td>bệnh viện huyết học</td>
-                    <td>A+</td>
-                    <td>21/5/2023</td>
-                    <td>21</td>
-                </tr>
-            </table>
-            
-                
-            
-        </div>
-    </div>    
+      <div class="nav">
+        <ul>
+          <li>
+            <a href="home_user.html" class="nav-link">
+              <i class="header-icon fa-solid fa-house"></i>
+              <span>Trang chủ</span>
+            </a>
+          </li>
+          <li>
+            <a href="dangdangky.html" class="nav-link">
+              <i class="header-icon fa-solid fa-user"></i>
+              <span>Hoạt động đang đăng ký</span>
+            </a>
+          </li>
+          <li>
+            <a href="lichsuhienmau.html" class="nav-link">
+              <i class="header-icon fa-solid fa-user-injured"></i>
+              <span>Lịch sử hiến máu</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <table id="historyTable">
+          <tr>
+            <th>Tên bệnh viện</th>
+            <th>Nhóm máu</th>
+            <th>Ngày hiến máu</th>
+            <th>Hiến (ml)</th>
+          </tr>
+          <tr>
+            <td>bệnh viện huyết học</td>
+            <td>A+</td>
+            <td>21/5/2023</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>bệnh viện huyết học</td>
+            <td>A+</td>
+            <td>21/5/2023</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>bệnh viện huyết học</td>
+            <td>A+</td>
+            <td>21/5/2023</td>
+            <td>21</td>
+          </tr>
+        </table>
+      </div>
+    </div>
 
     <script>
-        var historyDataJSON = localStorage.getItem("historyData");
-if (historyDataJSON) {
-    var historyData = JSON.parse(historyDataJSON);
+      var historyDataJSON = localStorage.getItem("historyData");
+      if (historyDataJSON) {
+        var historyData = JSON.parse(historyDataJSON);
 
-    // Thêm dữ liệu vào bảng
-    var table = document.getElementById("historyTable");
-    var newRow = table.insertRow();
+        // Thêm dữ liệu vào bảng
+        var table = document.getElementById("historyTable");
+        var newRow = table.insertRow();
 
-    var cell1 = newRow.insertCell(0);
-    cell1.innerHTML = historyData.tenBenhVien;
+        var cell1 = newRow.insertCell(0);
+        cell1.innerHTML = historyData.tenBenhVien;
 
-    var cell2 = newRow.insertCell(1);
-    cell2.innerHTML = historyData.nhomMau;
+        var cell2 = newRow.insertCell(1);
+        cell2.innerHTML = historyData.nhomMau;
 
-    var cell3 = newRow.insertCell(2);
-    cell3.innerHTML = historyData.ngayHienMau;
+        var cell3 = newRow.insertCell(2);
+        cell3.innerHTML = historyData.ngayHienMau;
 
-    var cell4 = newRow.insertCell(3);
-    cell4.innerHTML = historyData.hien;
-    //localStorage.removeItem("historyData");
-}
+        var cell4 = newRow.insertCell(3);
+        cell4.innerHTML = historyData.hien;
+        //localStorage.removeItem("historyData");
+      }
     </script>
     <script src="user.js"></script>
-</body>
+  </body>
 </html>

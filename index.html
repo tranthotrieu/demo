@@ -1,151 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="user/user.css">
-    <link rel="stylesheet" href="admin/admin.css">
-</head>
-<body>
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="user/user.css" />
+    <link rel="stylesheet" href="admin/admin.css" />
+  </head>
+
+  <body>
     <div class="header">
-        <div class="header-name ">
-            <a href="" class="header-link">
-                <i class="header-icon fa-solid fa-heart-pulse"></i>
-                <span>Online Blood Bank</span>
+      <div class="header-name">
+        <a href="" class="header-link">
+          <i class="header-icon fa-solid fa-heart-pulse"></i>
+          <span>Ngân hàng máu</span>
+        </a>
+      </div>
+      <div class="header-name">
+        <ul class="header-list">
+          <li>
+            <a href="index.html" class="header-link">
+              <i class="header-icon fa-solid fa-house"></i>
+              <span>Trang chủ</span>
             </a>
-        </div>
-        <div class="header-name ">
-            <ul class="header-list">
-                <li>
-                    <a href="index.html" class="header-link">
-                        <i class="header-icon fa-solid fa-house"></i>
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="login/login_user.html" class="header-link">
-                        <i class="header-icon fa-solid fa-user"></i>
-                        <span>User</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="login/login_hospital.html" class="header-link">
-                        <i class="header-icon fa-solid fa-user-shield"></i>
-                        <span>Hospital</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+          </li>
+          <li>
+            <a href="login/login_user.html" class="header-link">
+              <i class="header-icon fa-solid fa-user"></i>
+              <span>Người dùng</span>
+            </a>
+          </li>
+          <li>
+            <a href="login/login_hospital.html" class="header-link">
+              <i class="header-icon fa-solid fa-user-shield"></i>
+              <span>Bệnh viện</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <img class="background" src="img/background1.webp" alt="">
+    <div class="hero">
+      <div class="hero-div">
+        <div class="hero-title">Ngân hàng máu trung ương</div>
+        <div class="hero-text">
+          - Nguyên góp <span>máu</span> để cứu hàng triệu sinh mạng -
+        </div>
+      </div>
+
+      <img
+        class="background"
+        src="img/freepik-export-20240518235644yHzw.png"
+        alt=""
+      />
+    </div>
 
     <div class="container right">
-            
-        <h3> <i class="fa-regular fa-calendar-days"></i> Bạn cần đặt lịch vào thời gian nào ?</h3>
+      <div class="booking-zone">
+        <h3 class="calendar-title">
+          <i class="fa-regular fa-calendar-days"></i>
+          <div>Bạn cần đặt lịch vào thời gian nào ?</div>
+        </h3>
         <div class="date">
+          <div>
             <label for="">Từ ngày</label>
-            <input type="date">
+            <input type="date" />
+          </div>
+          <div>
             <label for="">Đến ngày</label>
-            <input type="date">
-            <button class="btn-search">Tìm kiếm</button>
+            <input type="date" />
+          </div>
         </div>
 
         <div class="select">
-            <label class="organization " for="organization">Đơn vị tổ chức :</label>
-              <select id="organization" name="organization">
-                  <option value="A+">Tất cả</option>
-                  <option value="A-">Bệnh viện truyền máu huyết học</option>
-                  <option value="B+">Trung tâm hiến máu nhân đạo tp.HCM</option>
-                  <option value="B-">Trung tâm truyền máu chợ rẫy</option>
-                  <option value="O+">Hội chữ thập đỏ quận 1</option>
-                  <option value="O-">Hội chữ thập đỏ quận 3</option>
-                  <option value="AB+">Hội chữ thập đỏ quận 4</option>
-                  <option value="AB-">Hội chữ thập đỏ quận 5</option>
-              </select>
+          <label class="organization" for="organization"
+            >Đơn vị tổ chức :</label
+          >
+          <select id="organization" name="organization">
+            <option value="A+">Tất cả</option>
+            <option value="A-">Bệnh viện truyền máu huyết học</option>
+            <option value="B+">Trung tâm hiến máu nhân đạo tp.HCM</option>
+            <option value="B-">Trung tâm truyền máu chợ rẫy</option>
+            <option value="O+">Hội chữ thập đỏ quận 1</option>
+            <option value="O-">Hội chữ thập đỏ quận 3</option>
+            <option value="AB+">Hội chữ thập đỏ quận 4</option>
+            <option value="AB-">Hội chữ thập đỏ quận 5</option>
+          </select>
         </div>
+        <button class="btn-search">Tìm kiếm</button>
+      </div>
 
-        <div class="action">
-            <p class="vio"><span class="result">20 </span>  KẾT QUẢ</p>
-            <div class="item">
-                <div class="item-img">
-                    <img width="50%" src="https://static.giotmauvang.org.vn/ihpstatic/LOGO/CTD.png" alt="CTD">
-                </div>
-                <div class="item-contex">
-                    <div class="item-contex1">
-                        <h2>Hiến máu - Trung tâm hiến máu nhân đạo tp.HCM </h2>
-                        <p>Địa chỉ : <span>106 thiên phước,phường 9,quận tân bình</span></p>
-                        <p>Thời gian hoạt động: <span> <span class="dateAction">20/05/2024</span> - Từ 07:00 đến 11:30</span></p>
-                        <p>Thời than hiến máu: <span>07:00 - 11:00</span></p>
-                    </div>
-                    <div class="item-contex2">
-                        <p>Số lượng đăng ký</p>
-                        <p class="vio"><span class="peo">5</span>/ <span class="peo">200</span> Người</p>
-                        <button class="btn-datlich">Đặt lịch</button>
-                    </div>
-                </div>
+      <div class="action">
+        <p class="vio"><span class="result">20 </span> KẾT QUẢ</p>
+        <div class="items">
+          <div class="item">
+            <div class="item-img">
+              <img
+                width="50%"
+                src="https://static.giotmauvang.org.vn/ihpstatic/LOGO/CTD.png"
+                alt="CTD"
+              />
             </div>
-            <div class="item">
-                <div class="item-img">
-                    <img width="50%" src="https://static.giotmauvang.org.vn/ihpstatic/LOGO/CR.png" alt="CR">
-                </div>
-                <div class="item-contex">
-                    <div class="item-contex1">
-                        <h2>Hiến máu - Trung tâm hiến máu nhân đạo tp.HCM </h2>
-                        <p>Địa chỉ : <span>106 thiên phước,phường 9,quận tân bình</span></p>
-                        <p>Thời gian hoạt động: <span><span class="dateAction">19/05/2024</span> - Từ 07:00 đến 11:30</span></p>
-                        <p>Thời than hiến máu: <span>07:00 - 11:00</span></p>
-                    </div>
-                    <div class="item-contex2">
-                        <p>Số lượng đăng ký</p>
-                        <p class="vio"><span class="peo">5</span>/ <span class="peo">200</span> Người</p>
-                        <button class="btn-datlich">Đặt lịch</button>
-                    </div>
-                </div>
+            <div class="item-contex">
+              <div class="item-contex1">
+                <h2>Hiến máu - Trung tâm hiến máu nhân đạo tp.HCM</h2>
+                <p>
+                  Địa chỉ : <span>106 thiên phước,phường 9,quận tân bình</span>
+                </p>
+                <p>
+                  Thời gian hoạt động:
+                  <span>
+                    <span class="dateAction">20/05/2024</span> - Từ 07:00 đến
+                    11:30</span
+                  >
+                </p>
+                <p>Thời than hiến máu: <span>07:00 - 11:00</span></p>
+              </div>
+              <div class="item-contex2">
+                <p>Số lượng đăng ký</p>
+                <p class="vio">
+                  <span class="peo">5</span>/ <span class="peo">200</span> Người
+                </p>
+                <button class="btn-datlich">Đặt lịch</button>
+              </div>
             </div>
-            <div class="item">
-                <div class="item-img">
-                    <img width="50%" src="https://static.giotmauvang.org.vn/ihpstatic/LOGO/CR.png" alt="CR">
-                </div>
-                <div class="item-contex">
-                    <div class="item-contex1">
-                        <h2>Hiến máu - Trung tâm hiến máu nhân đạo tp.HCM </h2>
-                        <p>Địa chỉ : <span>106 thiên phước,phường 9,quận tân bình</span></p>
-                        <p>Thời gian hoạt động: <span><span class="dateAction">15/05/2024</span> - Từ 07:00 đến 11:30</span></p>
-                        <p>Thời than hiến máu: <span>07:00 - 11:00</span></p>
-                    </div>
-                    <div class="item-contex2">
-                        <p>Số lượng đăng ký</p>
-                        <p class="vio"><span class="peo">5</span>/ <span class="peo">200</span> Người</p>
-                        <button class="btn-datlich">Đặt lịch</button>
-                    </div>
-                </div>
+          </div>
+          <div class="item">
+            <div class="item-img">
+              <img
+                width="50%"
+                src="https://static.giotmauvang.org.vn/ihpstatic/LOGO/CR.png"
+                alt="CR"
+              />
             </div>
-            <div class="item">
-                <div class="item-img">
-                    <img width="50%" src="https://static.giotmauvang.org.vn/ihpstatic/LOGO/CTD.png" alt="CTD">
-                </div>
-                <div class="item-contex">
-                    <div class="item-contex1">
-                        <h2>Hiến máu - Trung tâm hiến máu nhân đạo tp.HCM </h2>
-                        <p>Địa chỉ : <span>106 thiên phước,phường 9,quận tân bình</span></p>
-                        <p>Thời gian hoạt động: <span><span class="dateAction">19/05/2024</span>- Từ 07:00 đến 11:30</span></p>
-                        <p>Thời than hiến máu: <span>07:00 - 11:00</span></p>
-                    </div>
-                    <div class="item-contex2">
-                        <p>Số lượng đăng ký</p>
-                        <p class="vio"><span class="peo">5</span>/ <span class="peo">200</span> Người</p>
-                        <button class="btn-datlich">Đặt lịch</button>
-                    </div>
-                </div>
+            <div class="item-contex">
+              <div class="item-contex1">
+                <h2>Hiến máu - Trung tâm hiến máu nhân đạo tp.HCM</h2>
+                <p>
+                  Địa chỉ : <span>106 thiên phước,phường 9,quận tân bình</span>
+                </p>
+                <p>
+                  Thời gian hoạt động:
+                  <span
+                    ><span class="dateAction">19/05/2024</span> - Từ 07:00 đến
+                    11:30</span
+                  >
+                </p>
+                <p>Thời than hiến máu: <span>07:00 - 11:00</span></p>
+              </div>
+              <div class="item-contex2">
+                <p>Số lượng đăng ký</p>
+                <p class="vio">
+                  <span class="peo">5</span>/ <span class="peo">200</span> Người
+                </p>
+                <button class="btn-datlich">Đặt lịch</button>
+              </div>
             </div>
-            
+          </div>
+          <div class="item">
+            <div class="item-img">
+              <img
+                width="50%"
+                src="https://static.giotmauvang.org.vn/ihpstatic/LOGO/CR.png"
+                alt="CR"
+              />
+            </div>
+            <div class="item-contex">
+              <div class="item-contex1">
+                <h2>Hiến máu - Trung tâm hiến máu nhân đạo tp.HCM</h2>
+                <p>
+                  Địa chỉ : <span>106 thiên phước,phường 9,quận tân bình</span>
+                </p>
+                <p>
+                  Thời gian hoạt động:
+                  <span
+                    ><span class="dateAction">15/05/2024</span> - Từ 07:00 đến
+                    11:30</span
+                  >
+                </p>
+                <p>Thời than hiến máu: <span>07:00 - 11:00</span></p>
+              </div>
+              <div class="item-contex2">
+                <p>Số lượng đăng ký</p>
+                <p class="vio">
+                  <span class="peo">5</span>/ <span class="peo">200</span> Người
+                </p>
+                <button class="btn-datlich">Đặt lịch</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-img">
+              <img
+                width="50%"
+                src="https://static.giotmauvang.org.vn/ihpstatic/LOGO/CTD.png"
+                alt="CTD"
+              />
+            </div>
+            <div class="item-contex">
+              <div class="item-contex1">
+                <h2>Hiến máu - Trung tâm hiến máu nhân đạo tp.HCM</h2>
+                <p>
+                  Địa chỉ : <span>106 thiên phước,phường 9,quận tân bình</span>
+                </p>
+                <p>
+                  Thời gian hoạt động:
+                  <span
+                    ><span class="dateAction">19/05/2024</span>- Từ 07:00 đến
+                    11:30</span
+                  >
+                </p>
+                <p>Thời than hiến máu: <span>07:00 - 11:00</span></p>
+              </div>
+              <div class="item-contex2">
+                <p>Số lượng đăng ký</p>
+                <p class="vio">
+                  <span class="peo">5</span>/ <span class="peo">200</span> Người
+                </p>
+                <button class="btn-datlich">Đặt lịch</button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    
+
     <script src="user/user.js"></script>
-    
-</body>
+  </body>
 </html>
